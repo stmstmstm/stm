@@ -14,7 +14,7 @@ To install TensorLayer, you can simply run:
 
 ```
 pip install tensorlayer
-'''
+```
 
 # Training
 
