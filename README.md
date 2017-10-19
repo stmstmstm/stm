@@ -1,14 +1,14 @@
 Deep Structure Transfer Machine
 =============
 
-This code was used for cifar image classification experiments with Deep Structure Transfer Machine.
+This code was used for Cifar image classification experiments with Deep Structure Transfer Machine.
 
 
 # Installation
 
-The code is developed using Tensorflow.
+The code is developed using Tensorflow 1.2.
 
-For simplicity, TensorLayer is used for quitck loading the cifar data. Note that in order to fully reproduce the performance reported in the paper, data augmentations like random flipping and translation are needed.
+For simplicity, TensorLayer is used for quitck loading the Cifar data. Noted that in order to fully reproduce the performance reported in the paper, please follow Wide Residual Networks for data augmentation.
 
 To install TensorLayer, you can simply run:
 
@@ -31,4 +31,7 @@ python manifold.py --manifold_weight sigma
 Other hyper-parameters can be set by adding  --manifold_weigh, --learning_rate, --decay_step and etc.
 
 An example log file is also attached for reference.
+
+# References
+- Zagoruyko, Sergey, and N. Komodakis. "Wide Residual Networks." (2016).
 
