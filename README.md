@@ -8,7 +8,7 @@ This code was used for Cifar image classification experiments with Deep Structur
 
 The code is developed using Tensorflow 1.2.
 
-For simplicity, TensorLayer is used for quitck loading the Cifar data. Noted that in order to fully reproduce the performance reported in the paper, please follow Wide Residual Networks for data augmentation.
+For simplicity, TensorLayer is used for quitck loading the Cifar data. Noted that in order to fully reproduce the performance reported in the paper, please follow Wide Residual Networks [1] for data preprocessing.
 
 To install TensorLayer, you can simply run:
 
