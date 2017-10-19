@@ -20,7 +20,7 @@ parser.add_argument('--momentum', type=float, default=0.9, help='Initial learnin
 parser.add_argument('--decay_step', type=int, default=20000, help='Decay step for lr decay [default: 20000]')
 parser.add_argument('--decay_rate', type=float, default=0.1, help='Decay rate for lr decay [default: 0.1]')
 parser.add_argument('--manifold_weight', type=float, default=0.2, help='Decay weight for manifold loss [default: 0.0]')
-parser.add_argument('--dropout_rate', type=float, default=0.6, help='Dropout pass rate [default: 0.6]')
+parser.add_argument('--dropout_rate', type=float, default=0.5, help='Dropout pass rate [default: 0.6]')
 parser.add_argument('--num_sample', type=int, default=30, help='Number of sample saved in the buffer [default: 30]')
 parser.add_argument('--weight_decay', type=float, default=0.00005, help='Weight decay for conv layers [default: 0.00005]')
 FLAGS = parser.parse_args()

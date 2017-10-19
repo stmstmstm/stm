@@ -1,12 +1,12 @@
-Deep Transfer Machine
+Deep Structure Transfer Machine
 =============
 
-This code was used for cifar image classification experiments with Deep Transfer Machine.
+This code was used for cifar image classification experiments with Deep Structure Transfer Machine.
 
 
 # Installation
 
-The code is developed using Tensorflow. We tested our code using Tensorflow 1.2.
+The code is developed using Tensorflow.
 
 For simplicity, TensorLayer is used for quitck loading the cifar data. Note that in order to fully reproduce the performance reported in the paper, data augmentations like random flipping and translation are needed.
 
@@ -23,12 +23,12 @@ You can train the network by running:
 ```
 python manifold.py --gpu 0 --log_dir log1
 ```
-Note that the weight for manifold loss is set to be 0 by default, to train the network using manifold loss, run:
+The weight for manifold loss is set to be 0.2 by default, to train the network using manifold loss, run:
 
 ```
 python manifold.py --manifold_weight sigma
 ```
-Several hyper-parameter can be set by add  --manifold_weigh, --learning_rate, --decay_step and etc.
+Other hyper-parameters can be set by adding  --manifold_weigh, --learning_rate, --decay_step and etc.
 
 An example log file is also attached for reference.
 
