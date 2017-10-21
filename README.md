@@ -1,7 +1,7 @@
 Deep Structure Transfer Machine
 =============
 
-This code was used for Cifar image classification experiments with Deep Structure Transfer Machine.
+This code was only used for CIFAR image classification experiments with Deep Structure Transfer Machine based on Tensorflow. Other experiments are done based on Caffe, the source code will be reseased soon.
 
 
 # Installation
