@@ -109,6 +109,7 @@ def load_cifar_data():
     x_test /= 255.0
     train_mean = x_train.mean()
     train_std = x_train.std()
+    x_train = (x_train - train_mean) / train_std
     x_test = (x_test - train_mean) / train_std
     return x_train, y_train, x_test, y_test
 
