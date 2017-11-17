@@ -105,10 +105,12 @@ def wide_block(input, stride, num_channel, name, is_training):
 
 def load_cifar_data():
     x_train, y_train, x_test, y_test = tl.files.load_cifar10_dataset(shape=(-1, 32, 32, 3), plotable=False)
+    x_train /= 255.0
+    x_test /= 255.0
     train_mean = x_train.mean()
     train_std = x_train.std()
     x_test = (x_test - train_mean) / train_std
-    return x_train, y_train, x_test, y_tes
+    return x_train, y_train, x_test, y_test
 
 def get_model(input_data, is_training):
     x = conv2d(input_data, num_output_channels=16, kernel_size=[3,3], scope='conv_init', stride=[1,1], activation_fn=None,
